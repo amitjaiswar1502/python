@@ -57,14 +57,40 @@
 # 50 – 60 => D
 # <50 => F
 
-marks = {}
-subjects = ["English","Maths","Physics","Biology"]
-for i in subjects:
-    subject_marks = input("Enter the marks for each subject {i} :")
-    subjects(i) = subject_marks
-print(marks)
+# marks_student = {}
+# marks = []
+# subjects = ["English","Maths","Physics","Biology"]
+# for i in subjects:
+#     subject_marks = int(input(f"Enter the marks for each subject {i} : "))
+#     marks_student[i] = subject_marks
+#     marks.append(subject_marks)
+
+# total_marks = sum(marks)
+# percentage = total_marks/400 * 100
+# if 90 <= percentage <= 100:
+#     grade = "Ex"
+# elif 80 <= percentage <= 90:
+#     grade = "A"
+# elif 70 <= percentage < 80:
+#     grade = "B"
+# elif 60 <= percentage < 70:
+#     grade = "C"
+# elif 50 <= percentage < 60:
+#     grade = "D"
+# else:
+#     grade = "F"
+
+# print(f"Percentage: {percentage:.2f}%, Grade: {grade}")
 
 
 
 
 # 7. Write a program to find out whether a given post is talking about “Harry” or not.
+
+post = input("Enter your post text: ")
+
+# 2. Check for the word "harry" in lowercase
+if "harry" in post.lower():
+    print("Yes! This post is talking about Harry.")
+else:
+    print("No, this post does not mention Harry.")
